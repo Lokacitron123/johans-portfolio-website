@@ -28,7 +28,7 @@ export default function RootLayout({
       >
         <DarkLightProvider>
           <Header />
-          <main className='mx-auto max-w-5xl px-6 flex flex-col justify-center items-center'>
+          <main className='mx-auto max-w-5xl px-6 mt-5 flex flex-col justify-center items-center'>
             {children}
           </main>
           <Footer />

@@ -40,9 +40,9 @@ export default function Pageheader() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h2 className='font-bold text-3xl md:text-5xl text-center'>
+        <h1 className='font-bold text-3xl md:text-5xl text-center'>
           Johan <span className='text-red-600/90'>Lindell</span>
-        </h2>
+        </h1>
         <p className='text-center max-w-lg'>
           I am a fullstack developer focused on, but not limited to, building
           applications using MERN and Next.js.

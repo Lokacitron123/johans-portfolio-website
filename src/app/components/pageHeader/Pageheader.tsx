@@ -15,7 +15,7 @@ import {
 
 export default function Pageheader() {
   return (
-    <section className='w-full  flex flex-col md:flex-row justify-evenly items-center  mt-10 '>
+    <section className='w-full  flex flex-col md:flex-row justify-between items-center m-24 md:m-36'>
       <motion.div
         className='min-w-50 '
         initial={{ opacity: 0, scale: 0 }}
@@ -32,7 +32,7 @@ export default function Pageheader() {
           quality={95}
           priority={true}
           alt='Profile picture of Johan, the owner and developer of this website.'
-          className='h-48 w-48 rounded-full object-cover border-[0.35rem] border-gray-400 dark:border-white shadow-xl'
+          className='h-48 w-48 md:h-64 md:w-64 rounded-full object-cover border-[0.35rem] border-gray-400 dark:border-white shadow-xl'
         />
       </motion.div>
       <motion.div
@@ -41,7 +41,7 @@ export default function Pageheader() {
         animate={{ opacity: 1, y: 0 }}
       >
         <h2 className='font-bold text-3xl md:text-5xl text-center'>
-          Hello, Johan <span className='text-red-600/90'>Lindell</span>
+          Johan <span className='text-red-600/90'>Lindell</span>
         </h2>
         <p className='text-center max-w-lg'>
           I am a fullstack developer focused on, but not limited to, building

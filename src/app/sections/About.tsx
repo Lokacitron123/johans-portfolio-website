@@ -7,7 +7,7 @@ import React from "react";
 export default function About() {
   return (
     <motion.article
-      className='font-bold'
+      className='flex justify-center flex-col m-24 md:m-36'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -16,17 +16,17 @@ export default function About() {
     >
       <SectionHeading title='About' />
       <p className='mb-3 text-start max-w-[500px] '>
-        I recently graduated from the vocational school, Medieinstitutet, where
-        I studied full-stack web development for 2 years. During my studies, I
-        had the opportunity to familiarize myself with various technologies,
-        ranging from creating full-stack projects and working with APIs, both
-        homemade as well as third-party, to working with WordPress and PHP,
-        agile development, and putting it into practice in internships.
+        I&apos;m a fresh full-stack web developer graduate with a deep passion
+        for the world of JavaScript, utilizing tools like React and Next.js
+        React to create web applications. The unique combination of creativity,
+        logic, technology and never running out of new things to discover,
+        drives my excitement and passion for web development.
       </p>
       <br />
       <p className='mb-3 text-left max-w-[500px]'>
-        When I am not tinkering on a project or learning various tools I enjoy
-        practising Karate, reading books or develop
+        When I&apos;m not absorbed in learning new concepts, tools or creating
+        web projects I like to spend my time practising karate, reading books or
+        gaming.
       </p>
     </motion.article>
   );

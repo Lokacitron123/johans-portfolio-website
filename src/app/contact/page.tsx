@@ -20,6 +20,7 @@ const FormDataSchema = z.object({
     .string()
     .min(2, { message: "Please fill in a message to submit." })
     .max(2500, { message: "Too long message." }),
+  honeypot: z.string().optional(),
 });
 
 export type FormFields = z.infer<typeof FormDataSchema>;
@@ -33,6 +34,11 @@ export default function Contact() {
   const { errors, isSubmitting } = formState;
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
+    // Check honeypot field to prevent spam bots
+    if (data.honeypot) {
+      toast.error("Spam detected");
+      return;
+    }
     const { response, error } = await sendEmail(data);
 
     if (error) {
@@ -138,19 +144,29 @@ export default function Contact() {
             </div>
           )}
 
+          {/* Honeypot (hidden field) */}
+          <input
+            type='text'
+            id='honeypot'
+            className='hidden'
+            {...register("honeypot")}
+            tabIndex={-1}
+            autoComplete='off'
+          />
+
           <button
-            className='group flex items-center justify-center gap-2 h-12 w-32 bg-gray-900 text-white rounded-full outline-none transition-all  f   dark:bg-gray-50 dark:text-gray-900'
+            className='group flex items-center justify-center gap-2 h-12 w-32 bg-gray-900 text-white rounded-full outline-none focus:scale-[1.15] transition-all hover:scale-[1.15]   active:scale-105  dark:bg-gray-50 dark:text-gray-900'
             type='submit'
             disabled={isSubmitting}
           >
             {isSubmitting ? (
               <>
-                Loading{" "}
+                Loading
                 <LoaderCircle className='text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 animate-spin' />
               </>
             ) : (
               <>
-                Submit{" "}
+                Submit
                 <Send className='text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1' />
               </>
             )}

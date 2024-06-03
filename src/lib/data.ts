@@ -86,7 +86,7 @@ export const experienceData = [
     title: "Internship - GOOZO",
     location: "Gothenburg - Remote",
     description:
-      "Internship that spanned over two periods, 10 and 15 weeks repectively, where I had the opportunity to...",
+      "Internship that spanned over two periods, 10 and 15 weeks repectively, where I had the opportunity to deepdive in to the world of Next.js. During my time at GOOZO I learned E2E testing using Playwright, creating UIs using tailwindCSS and best practises for scaleable reusable components to using GraphQL and many tools for creating seemless web applications that scale.",
     icon: React.createElement(Code),
     date: "2023 - 2024",
   },
@@ -101,15 +101,15 @@ export const experienceData = [
   {
     title: "Strängnäs Communal Library",
     location: "Strängnäs",
-    description: "Library assistant ...",
+    description:
+      "Library assistant, working with customer service and administration.",
     icon: React.createElement(LibraryIcon),
     date: "2018 - 2021",
   },
   {
     title: "Mälardalen University - English and communication program",
     location: "Eskilstuna",
-    description:
-      "Liberaral arts degree in language and communication studies ...",
+    description: "Liberaral arts degree in language and communication studies.",
     icon: React.createElement(University),
     date: "2016 - 2018",
   },

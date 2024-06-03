@@ -21,7 +21,7 @@ export function Header() {
       <nav className='flex justify-between items-center py-8 lg:py-4 px-2 relative z-10 '>
         <div className='flex items-center gap-3 '>
           <Link href={"/"}>
-            <p className='font-bold text-2xl'>
+            <p className='font-bold text-3xl'>
               Johan <span className='text-red-600/90'>Lindell</span>
             </p>
           </Link>

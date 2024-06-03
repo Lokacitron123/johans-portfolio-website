@@ -44,8 +44,9 @@ export default function Pageheader() {
           Johan <span className='text-red-600/90'>Lindell</span>
         </h1>
         <p className='text-center max-w-lg'>
-          I am a fullstack developer focused on, but not limited to, building
-          applications using MERN and Next.js.
+          I am a fullstack developer that strives to create engaging, accessible
+          and scaleable digital experiences using tools, but not exclusively,
+          like MERN and Next.js.
         </p>
         <nav
           className='flex flex-col sm:flex-row justify-center items-center gap-3 px-4  mt-10 text-lg font-medium  '

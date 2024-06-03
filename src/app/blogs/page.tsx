@@ -1,5 +1,10 @@
 import React from "react";
+import { SectionHeading } from "../components/ui/Heading";
 
 export default function Blogs() {
-  return <div>Blogs</div>;
+  return (
+    <section>
+      <SectionHeading title='Blogs' />
+    </section>
+  );
 }

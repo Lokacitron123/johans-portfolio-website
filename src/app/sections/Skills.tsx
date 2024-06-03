@@ -6,7 +6,6 @@ import { skillsData } from "@/lib/data";
 import { motion } from "framer-motion";
 import { SectionHeading } from "../components/ui/Heading";
 import Link from "next/link";
-import { Toaster } from "react-hot-toast";
 
 const fadeInAnimationVariants = {
   initial: {

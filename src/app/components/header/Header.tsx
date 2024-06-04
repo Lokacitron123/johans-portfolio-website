@@ -17,7 +17,7 @@ export function Header() {
   };
 
   return (
-    <header className='sticky top-0 p-5 bg-gray-900 text-gray-50 z-50'>
+    <header className='sticky top-0 px-5 bg-gray-900 text-gray-50 z-50'>
       <nav className='flex justify-between items-center py-8 lg:py-4 px-2 relative z-10 '>
         <div className='flex items-center gap-3 '>
           <Link href={"/"}>

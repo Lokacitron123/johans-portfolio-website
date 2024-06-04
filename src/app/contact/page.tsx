@@ -50,11 +50,11 @@ export default function Contact() {
     reset();
   };
   return (
-    <section className='h-screen  mx-auto'>
+    <section className='h-screen mx-auto'>
       <SectionHeading title='Contact Me' />
-      <div className=' flex flex-col items-center justify-center'>
+      <div className='flex flex-col items-center justify-center'>
         <form
-          className=' mt-10 flex flex-col w-[400px] gap-3'
+          className='mt-10 flex flex-col min-w-[300px] gap-3'
           onSubmit={handleSubmit(onSubmit)}
         >
           {/* Name */}

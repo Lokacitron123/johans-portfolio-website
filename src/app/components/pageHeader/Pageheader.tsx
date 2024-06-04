@@ -17,7 +17,7 @@ export default function Pageheader() {
   return (
     <section className='w-full  flex flex-col md:flex-row justify-between items-center m-24 md:m-36'>
       <motion.div
-        className='min-w-50 '
+        className='min-w-50 relative'
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -32,8 +32,10 @@ export default function Pageheader() {
           quality={95}
           priority={true}
           alt='Profile picture of Johan, the owner and developer of this website.'
-          className='h-48 w-48 md:h-64 md:w-64 rounded-full object-cover border-[0.35rem] border-gray-400 dark:border-white shadow-xl'
+          className='h-48 w-48 md:h-64 md:w-64 rounded-full object-cover   shadow-xl'
         />
+        {/* Background div */}
+        <div className='absolute h-48 w-48 md:h-64 md:w-64 rounded-full bg-red-600/90 -z-10 -top-2 right-2' />
       </motion.div>
       <motion.div
         className='mt-10 flex flex-col gap-3'
@@ -45,8 +47,8 @@ export default function Pageheader() {
         </h1>
         <p className='text-center max-w-lg'>
           I am a fullstack developer that strives to create engaging, accessible
-          and scaleable digital experiences using tools, but not exclusively,
-          like MERN and Next.js.
+          and scaleable digital experiences using tools like, but not
+          exclusively, MERN and Next.js.
         </p>
         <nav
           className='flex flex-col sm:flex-row justify-center items-center gap-3 px-4  mt-10 text-lg font-medium  '

@@ -4,10 +4,13 @@ import { links } from "@/lib/data";
 import React from "react";
 import LinkItem from "./LinkItem";
 import { motion } from "framer-motion";
-import { Divider } from "../../ui/Divider";
 import SocialMenu from "./SocialMenu";
 
-export default function MobileNavbar() {
+type MobileNavbarProps = {
+  toggleMobileNav: () => void;
+};
+
+export default function MobileNavbar({ toggleMobileNav }: MobileNavbarProps) {
   return (
     <motion.nav
       key='mobileNav' // Required by AnimatePresence to track presence in tree
@@ -34,6 +37,7 @@ export default function MobileNavbar() {
               open: { y: "0%", opacity: 1 },
               closed: { y: "25%", opacity: 0 },
             }}
+            onClick={toggleMobileNav}
           >
             <LinkItem name={link.name} link={link.link} />
           </motion.li>

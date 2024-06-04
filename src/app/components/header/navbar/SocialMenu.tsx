@@ -5,7 +5,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ThemeSwitchBtn } from "../../buttons/ThemeSwitchBtn";
 
-export default function SocialMenu() {
+type SocialMenuProps = {
+  toggleMobileNav?: () => void;
+};
+
+export default function SocialMenu({ toggleMobileNav }: SocialMenuProps) {
   return (
     <motion.div
       className='flex gap-3'

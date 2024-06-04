@@ -85,7 +85,7 @@ export function Header() {
           </motion.button>
         </div>
         <div className='hidden lg:block'>
-          <SocialMenu />
+          <SocialMenu toggleMobileNav={toggleMobileNav} />
         </div>
       </nav>
       <AnimatePresence>
@@ -96,7 +96,7 @@ export function Header() {
               bounce: 0.25,
             }}
           >
-            <MobileNavbar />
+            <MobileNavbar toggleMobileNav={toggleMobileNav} />
           </MotionConfig>
         )}
       </AnimatePresence>

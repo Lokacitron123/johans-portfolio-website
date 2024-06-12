@@ -14,7 +14,7 @@ export default function About() {
         delay: 0.175,
       }}
     >
-      <SectionHeading title='About' />
+      <SectionHeading title='About Me' />
       <p className='mb-3 '>
         I&apos;m a full-stack web developer graduate who discovered my interest
         in coding when I was first introduced to HTML and CSS in a UX/UI design
@@ -24,13 +24,16 @@ export default function About() {
         make the web a better place. I envision myself designing and building
         applications that not only look great but also add real value.
       </p>
-      <br />
+      <p className='mb-3'>
+        With a blend of technical skills, creativity, and a passion for
+        continuous learning, I&apos;m ready to make a meaningful impact in the
+        world of web development.
+      </p>
+
       <p className='mb-3 '>
         When I&apos;m not absorbed in learning new concepts, tools, or creating
         web projects, I like to spend my time practicing karate, reading books,
-        or gaming. With a blend of technical skills, creativity, and a passion
-        for continuous learning, I&apos;m ready to make a meaningful impact in
-        the world of web development.
+        or gaming.
       </p>
     </motion.article>
   );

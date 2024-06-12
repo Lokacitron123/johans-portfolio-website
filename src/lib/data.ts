@@ -114,3 +114,20 @@ export const experienceData = [
     date: "2016 - 2018",
   },
 ] as const;
+
+export const projectsData = [
+  {
+    name: "Express Server with MongoDB",
+    description:
+      "The goal of this project has been to create a CRUD REST API using Mongoose and to become more confident in the Express framework and ecosystem.",
+    url: "https://github.com/Lokacitron123/express-server",
+    image: "/node_express.png",
+    skills: [
+      "Express",
+      "Express-validation",
+      "Express-session",
+      "Passport",
+      "Mongoose",
+    ],
+  },
+];

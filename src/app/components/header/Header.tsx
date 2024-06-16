@@ -5,8 +5,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { AnimatePresence, motion, MotionConfig } from "framer-motion";
 import MobileNavbar from "./navbar/MobileNavbar";
-import { ThemeSwitchBtn } from "../buttons/ThemeSwitchBtn";
-import { Github, Linkedin } from "lucide-react";
 import SocialMenu from "./navbar/SocialMenu";
 
 export function Header() {

@@ -17,7 +17,7 @@ export default function MobileNavbar({ toggleMobileNav }: MobileNavbarProps) {
       variants={{
         open: {
           y: "0%",
-          transition: { when: "beforeChildren", staggerChildren: 0.09 },
+          transition: { when: "beforeChildren", staggerChildren: 0.03 },
         },
         closed: {
           y: "-100%",

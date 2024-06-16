@@ -85,8 +85,10 @@ export const experienceData = [
   {
     title: "Internship - GOOZO",
     location: "Gothenburg - Remote",
+    // description:
+    //   "Internship that spanned over two periods, 10 and 15 weeks repectively, where I had the opportunity to deepdive in to the world of Next.js. During my time at GOOZO I learned E2E testing using Playwright, creating UIs using tailwindCSS and best practises for scaleable reusable components to using GraphQL and many tools for creating seemless web applications that scale.",
     description:
-      "Internship that spanned over two periods, 10 and 15 weeks repectively, where I had the opportunity to deepdive in to the world of Next.js. During my time at GOOZO I learned E2E testing using Playwright, creating UIs using tailwindCSS and best practises for scaleable reusable components to using GraphQL and many tools for creating seemless web applications that scale.",
+      "This internship, spanning two periods (10 and 15 weeks), focused on Next.js. I learned E2E testing with Playwright, UI creation with TailwindCSS, scalable component design, GraphQL, and tools for seamless web application development.",
     icon: React.createElement(Code),
     date: "2023 - 2024",
   },

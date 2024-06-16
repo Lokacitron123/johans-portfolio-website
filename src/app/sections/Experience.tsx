@@ -37,8 +37,7 @@ export const Experience = () => {
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                background: theme === "light" ? "white" : "black",
                 fontSize: "1.5rem",
               }}
             >

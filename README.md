@@ -1,6 +1,6 @@
 # Johan's Portfolio Website
 
-This is my personal website where I showcase my projects, ideas, and experiments. It’s built with modern web technologies to create a fast, responsive, and visually appealing experience.
+This is my personal website where I showcase my projects and ideas. 
 
 ### Tools Used
 - [Next.js](https://nextjs.org/)

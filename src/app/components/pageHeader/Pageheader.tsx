@@ -46,7 +46,9 @@ export default function Pageheader() {
         <h1 className="font-bold text-3xl md:text-5xl text-center">
           Johan M <span className="text-red-600/90">Lindell</span>
         </h1>
-        <p className="text-center max-w-lg">Web Developer</p>
+        <p className="text-center max-w-lg">
+          Web Developer | React.js Next.js | Front End
+        </p>
         <nav
           className="flex flex-col sm:flex-row justify-center items-center gap-3 px-4  mt-10 text-lg font-medium  "
           aria-label="Navigation Menu with Contact, CV Download, and Social Media Links"

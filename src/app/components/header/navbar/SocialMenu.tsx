@@ -12,24 +12,26 @@ type SocialMenuProps = {
 export default function SocialMenu({ toggleMobileNav }: SocialMenuProps) {
   return (
     <motion.div
-      className='flex gap-3'
+      className="flex gap-3"
       variants={{
         open: { y: "0%", opacity: 1 },
         closed: { y: "25%", opacity: 0 },
       }}
     >
-      <ul aria-label='social links' className='flex gap-3'>
+      <ul aria-label="social links" className="flex gap-3">
         <Link
-          href={"https://www.linkedin.com/in/johan-lindell-b08222251/"}
-          className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full w-fit outline-none focus:scale-[1.15]  hover:text-gray-950 hover:scale-[1.15]   active:scale-105 transition border border-black/10'
+          href={"https://www.linkedin.com/in/johan-masuoka-lindell-417847367/"}
+          target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full w-fit outline-none focus:scale-[1.15]  hover:text-gray-950 hover:scale-[1.15]   active:scale-105 transition border border-black/10"
         >
-          <Linkedin aria-label='LinkedIn Profile Link' />
+          <Linkedin aria-label="LinkedIn Profile Link" />
         </Link>
         <Link
           href={"https://github.com/Lokacitron123"}
-          className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full w-fit outline-none focus:scale-[1.15]  hover:text-gray-950 hover:scale-[1.15]   active:scale-105 transition border border-black/10'
+          target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full w-fit outline-none focus:scale-[1.15]  hover:text-gray-950 hover:scale-[1.15]   active:scale-105 transition border border-black/10"
         >
-          <Github aria-label='GitHub Profile Link' />
+          <Github aria-label="GitHub Profile Link" />
         </Link>
       </ul>
       <ThemeSwitchBtn />

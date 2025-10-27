@@ -12,23 +12,16 @@ export const sendEmail = async (formData: EmailData) => {
   const subject = formData.subject;
   const message = formData.message;
 
-  if (
-    (!message && typeof message !== "string") ||
-    !subject ||
-    !email ||
-    !name
-  ) {
-    return {
-      error: "Invalid message",
-    };
+  if (!name || !email || !subject || !message || typeof message !== "string") {
+    return { error: "Invalid message" };
   }
 
   let response;
 
   try {
     response = await resend.emails.send({
-      from: "contactform@johanlindell.dev",
-      to: "johan.lindell91@gmail.com",
+      from: process.env.CONTACT_FORM as string,
+      to: process.env.TO_INBOX as string,
       subject: subject,
       reply_to: email,
       react: React.createElement(ContactTemplate, {

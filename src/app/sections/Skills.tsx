@@ -23,11 +23,11 @@ const fadeInAnimationVariants = {
 
 export const Skills = () => {
   return (
-    <section className='w-full text-center m-24 md:m-36'>
-      <SectionHeading title='Skills' />
+    <section className="w-full text-center m-24 md:m-36">
+      <SectionHeading title="Skills" />
 
-      <div className='flex flex-col md:flex-row gap-6'>
-        <div className='flex flex-col justify-center gap-5 text-start'>
+      <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col justify-start gap-5 text-start">
           <p>
             During my two years at Medieinstitutet vocational school, I had the
             opportunity to familiarize myself with many tools and frameworks,
@@ -39,27 +39,27 @@ export const Skills = () => {
           </p>
           <br />
 
-          <p className='relative w-fit mx-auto'>
+          <p className="relative w-fit mx-auto">
             See some of my projects.{" "}
-            <span className='absolute w-full -bottom-1 left-0 h-0.5  bg-red-600/90' />
+            <span className="absolute w-full -bottom-1 left-0 h-0.5  bg-red-600/90" />
           </p>
 
           <Link
-            href='/contact'
-            className='relative max-w-fit bg-blue-500 rounded-lg overflow-hidden text-white px-5 py-2.5 group mx-auto'
+            href="/projects"
+            className="relative max-w-fit bg-blue-500 rounded-lg overflow-hidden text-white px-5 py-2.5 group mx-auto"
           >
-            <span className='absolute w-0 group-hover:w-full transition-all ease-out duration-300 h-full bg-blue-700 left-0 top-0' />
-            <span className='relative'>Projects</span>
+            <span className="absolute w-0 group-hover:w-full transition-all ease-out duration-300 h-full bg-blue-700 left-0 top-0" />
+            <span className="relative">Projects</span>
           </Link>
         </div>
-        <ul className='flex flex-wrap justify-center gap-2 text-lg '>
+        <ul className="flex flex-wrap justify-center gap-2 text-lg ">
           {skillsData.map((skill, index) => (
             <motion.li
               key={index}
-              className='text-gray-50 bg-gray-900 dark:text-gray-900 dark:bg-gray-50 border border-black/[0.1] rounded-xl px-3 py-3'
+              className="text-gray-50 bg-gray-900 dark:text-gray-900 dark:bg-gray-50 border border-black/[0.1] rounded-xl px-3 py-3"
               variants={fadeInAnimationVariants}
-              initial='initial'
-              whileInView='animate'
+              initial="initial"
+              whileInView="animate"
               viewport={{
                 once: true,
               }}

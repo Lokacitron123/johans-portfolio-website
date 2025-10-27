@@ -6,9 +6,9 @@ import { projectsData } from "@/lib/data";
 
 export default function Projects() {
   return (
-    <section className='mx-auto mb-10'>
-      <SectionHeading title='Projects' />
-      <div className='mx-auto flex flex-col justify-center items-center gap-20'>
+    <section className="mx-auto mb-10">
+      <SectionHeading title="Projects" />
+      <div className="mx-auto flex flex-col justify-center items-center gap-20 text-balance">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <ProjectCardTwo

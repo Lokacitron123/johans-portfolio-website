@@ -6,6 +6,7 @@ import "./globals.css";
 import { Header } from "@/app/components/header/Header";
 import Footer from "@/app/components/footer/Footer";
 import DarkLightProvider from "@/utils/DarkLightProvider";
+import { Toaster } from "react-hot-toast";
 
 // Fonts
 const inter = Inter({ subsets: ["latin"] });
@@ -22,16 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body
         className={`${firaCode.className}  bg-gray-100 text-gray-950 relative  dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 `}
       >
         <DarkLightProvider>
           <Header />
-          <main className='mx-auto max-w-5xl px-6 mt-5 flex flex-col justify-center items-center'>
+          <main className="mx-auto max-w-5xl px-6 mt-5 flex flex-col justify-center items-center">
             {children}
           </main>
           <Footer />
+          <Toaster position="bottom-right" />
         </DarkLightProvider>
       </body>
     </html>

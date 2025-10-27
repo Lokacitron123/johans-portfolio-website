@@ -65,20 +65,14 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js/Express",
-  "Git",
   "TailwindCSS",
+  "Node.js/Express",
   "Prisma",
   "MongoDB/Mongoose",
-  "GraphQL",
-  "Apollo",
-  "PostgreSQL",
-  "WordPress",
-  "Sanity.io",
-  "Socket.io",
-  "Framer Motion",
-  "Figma",
   "UX/UI",
+  "Figma",
+  "E2E Testing",
+  "Git",
 ] as const;
 
 export const experienceData = [
@@ -111,7 +105,7 @@ export const experienceData = [
   {
     title: "Mälardalen University - English and communication program",
     location: "Eskilstuna",
-    description: "Liberaral arts degree in language and communication studies.",
+    description: "Liberal arts studies in language and communication.",
     icon: React.createElement(University),
     date: "2016 - 2018",
   },
@@ -119,9 +113,17 @@ export const experienceData = [
 
 export const projectsData = [
   {
+    name: "Adventure API - A tour booking application with Node/Express and Mongoose",
+    description:
+      "This is an REST API for booking tours, adding reviews, picking guides, updating and adding tours. The project is made using Node.js/Express framework with MongoDB and Mongoose and a JWT system for authentication/authorization.",
+    url: "https://github.com/Lokacitron123/Adventure-API.git",
+    image: "/node_express.png",
+    skills: ["Express", "Express-validation", "Zod", "Mongoose"],
+  },
+  {
     name: "Express Server with MongoDB",
     description:
-      "The goal of this project has been to create a CRUD REST API using Mongoose and to become more confident in the Express framework and ecosystem.",
+      "The goal of this project has been to create a REST API using Mongoose and to become more confident in the Express framework and ecosystem.",
     url: "https://github.com/Lokacitron123/express-server",
     image: "/node_express.png",
     skills: [
